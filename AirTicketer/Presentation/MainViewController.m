@@ -100,7 +100,7 @@
                         TicketsViewController *ticketsViewController = [[TicketsViewController alloc] initWithTickets:tickets];
                         [self.navigationController showViewController:ticketsViewController sender:self];
                     } else {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Увы!" message:@"tickets_not_found".localize preferredStyle: UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"unfortunately".localize message:@"tickets_not_found".localize preferredStyle: UIAlertControllerStyleAlert];
                         [alertController addAction:[UIAlertAction actionWithTitle:@"close".localize style:(UIAlertActionStyleDefault) handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
                     }

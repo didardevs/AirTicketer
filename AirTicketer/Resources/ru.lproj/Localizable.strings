@@ -7,55 +7,57 @@
 */
 
 // TabBarController
-
-"search_tab" = "Search";
-"map_tab" = "Map";
-"favorites_tab" = "Favorites";
+"search_tab" = "Поиск";
+"map_tab" = "Карта цен";
+"favorites_tab" = "Избранное";
 
 
 // MainViewController
 
-"main_from" = "Origin";
-"main_to" = "Destination";
-"main_search" = "Find";
+"main_from" = "Откуда";
+"main_to" = "Куда";
+"main_search" = "Найти";
 
 
 // FirstViewController
 
-"about_app_header" = "ABOUT APP";
-"tickets_header" = "TICKETS";
-"map_price_header" = "MAP";
-"favorites_header" = "FAVORITES";
+"about_app_header" = "О ПРИЛОЖЕНИИ";
+"tickets_header" = "АВИАБИЛЕТЫ";
+"map_price_header" = "КАРТА ЦЕН";
+"favorites_header" = "ИЗБРАННОЕ";
 
-"about_app_describe" = "An application for searching airline tickets";
-"tickets_describe" = "Find the cheapest flights";
-"map_price_describe" = "View the price map";
-"favorites_describe" = "Save selected tickets to favorites";
+"about_app_describe" = "Приложение для поиска авиабилетов";
+"tickets_describe" = "Находите самые дешевые авиабилеты";
+"map_price_describe" = "Просматривайте карту цен";
+"favorites_describe" = "Сохраняйте выбранные билеты в избранное";
 
-"next_button" = "NEXT";
-"done_button" = "DONE";
+"next_button" = "ДАЛЕЕ";
+"done_button" = "ГОТОВО";
+
 
 // TicketsViewController
 
-"tickets_title" = "Tickets";
-"add_to_favorite" = "Add to favorites";
-"remove_from_favorite" = "Remove from favorites";
-"remind_me" = "Remind me";
-"ticket_reminder" = "Ticket reminder";
-"notification_will_be_sent" = "The notification will be sent";
-"success" = "Success";
-
+"tickets_title" = "Билеты";
+"add_to_favorite" = "Добавить в избранное";
+"remove_from_favorite" = "Удалить из избранного";
+"remind_me" = "Напомнить";
+"ticket_reminder" = "Напоминание о билете";
+"notification_will_be_sent" = "Уведомление будет отправлено";
+"success" = "Успешно";
 
 // Alerts
 
-"error" = "Error";
-"tickets_not_found" = "In this direction tickets are not found";
-"close" = "Close";
-"not_set_place_arrival_or_departure" = "It is necessary to indicate the place of departure and the place of arrival";
-"actions_with_tickets" = "Actions with tickets";
-"actions_with_tickets_describe" = "What do I need to do with the selected ticket?";
-"not_determine_current_city" = "Could not determine the current city!";
+"error" = "Ошибка";
+"tickets_not_found" = "По данному направлению билетов не найдено";
+"close" = "Закрыть";
+"not_set_place_arrival_or_departure" = "Необходимо указать место отправления и место прибытия";
+"actions_with_tickets" = "Действия с билетом";
+"actions_with_tickets_describe" = "Что необходимо сделать с выбранным билетом?";
+"not_determine_current_city" = "Не удалось определить текущий город!";
 
+"cities" = "Города";
+"airports" = "Аэропорты";
 
-"cities" = "Cities";
-"airports" = "Airports";
+"unfortunately" = "К сожалению";
+
+"rub" = "руб.";

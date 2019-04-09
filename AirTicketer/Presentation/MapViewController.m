@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "LocationService.h"
 #import "APIManager.h"
+#import "NSString+Localize.h"
 
 @interface MapViewController () <MKMapViewDelegate>
 @property (strong, nonatomic) MKMapView *mapView;
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Карта цен";
+    self.title = @"map_tab".localize;
     
     _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
     _mapView.showsUserLocation = YES;

@@ -9,6 +9,7 @@
 #import "TicketsViewController.h"
 #import "TicketTableViewCell.h"
 #import "NotificationCenter.h"
+#import "NSString+Localize.h"
 
 #define TicketCellReuseIdentifier @"TicketCellIdentifier"
 
@@ -28,7 +29,7 @@
     if (self) {
         isFavorites = YES;
         self.tickets = [NSArray new];
-        self.title = @"Избранное";
+        self.title = @"favorites_tab".localize;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.tableView registerClass:[TicketTableViewCell class] forCellReuseIdentifier:TicketCellReuseIdentifier];
     }
