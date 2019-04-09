@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-
-
 @interface Airport : NSObject
+
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *timezone;
 @property (nonatomic, strong) NSDictionary *translations;
@@ -24,5 +23,4 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
-
 

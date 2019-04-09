@@ -16,10 +16,8 @@
 
 @end
 
-
 @implementation DataManager
 
-//singleton init
 +(instancetype)shared
 {
     static DataManager *instance;
@@ -36,18 +34,27 @@
     __weak DataManager *weakSelf = self;
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
         NSArray *countriesJSONArray = [self arrayFromFileName:@"countries" ofType:@"json"];
-        weakSelf.countries = [self createObjectsFromArray:countriesJSONArray withType:country];
+        weakSelf.countries = [self createObjectsFromArray:countriesJSONArray withType:DataSourceTypeCountry];
         
         NSArray *citiesJSONArray = [self arrayFromFileName:@"cities" ofType:@"json"];
-        weakSelf.cities = [self createObjectsFromArray:citiesJSONArray withType:city];
+        weakSelf.cities = [self createObjectsFromArray:citiesJSONArray withType:DataSourceTypeCity];
         
         NSArray *airportsJSONArray = [self arrayFromFileName:@"airports" ofType:@"json"];
-        weakSelf.airports = [self createObjectsFromArray:airportsJSONArray withType:city];
+        weakSelf.airports = [self createObjectsFromArray:airportsJSONArray withType:DataSourceTypeAirport];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ModelUpdatedNotification" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kDataManagerLoadDataDidComplete object:nil];
         });
     });
+}
+
+- (City *)cityForLocation:(CLLocation *)location {
+    for (City *city in _cities) {
+        if (ceilf(city.coordinate.latitude) == ceilf(location.coordinate.latitude) && ceilf(city.coordinate.longitude) == ceilf(location.coordinate.longitude)) {
+            return city;
+        }
+    }
+    return nil;
 }
 
 - (NSMutableArray *)createObjectsFromArray:(NSArray *)array withType:(DataSourceType)type
@@ -56,19 +63,19 @@
     
     for (NSDictionary *jsonObject in array) {
         switch (type) {
-            case country:
+            case DataSourceTypeCountry:
             {
                 Country *country = [[Country alloc] initWithDictionary: jsonObject];
                 [results addObject: country];
                 break;
             }
-            case city:
+            case DataSourceTypeCity:
             {
                 City *city = [[City alloc] initWithDictionary: jsonObject];
                 [results addObject: city];
                 break;
             }
-            case airport:
+            case DataSourceTypeAirport:
             {
                 Airport *airport = [[Airport alloc] initWithDictionary: jsonObject];
                 [results addObject: airport];
@@ -81,6 +88,18 @@
     
     return results;
 }
+
+- (City *)cityForIATA:(NSString *)iata {
+    if (iata) {
+        for (City *city in _cities) {
+            if ([city.code isEqualToString:iata]) {
+                return city;
+            }
+        }
+    }
+    return nil;
+}
+
 
 - (NSArray *)arrayFromFileName:(NSString *)fileName ofType:(NSString *)type
 {

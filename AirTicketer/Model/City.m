@@ -6,9 +6,11 @@
 //  Copyright © 2018 Didar Naurzbayev. All rights reserved.
 //
 
+
 #import "City.h"
 
 @implementation City
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
@@ -30,4 +32,5 @@
     
     return self;
 }
+
 @end

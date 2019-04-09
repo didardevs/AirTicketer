@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F223260225C9B0C0000CE40 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22325F225C9B0C0000CE40 /* APIManager.m */; };
+		5F223266225C9B5F0000CE40 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223265225C9B5F0000CE40 /* CoreDataHelper.m */; };
+		5F223269225C9B8B0000CE40 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223268225C9B8B0000CE40 /* NotificationCenter.m */; };
+		5F22326C225C9BC80000CE40 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22326B225C9BC80000CE40 /* NSString+Localize.m */; };
+		5F22326F225C9BF30000CE40 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22326E225C9BF30000CE40 /* Ticket.m */; };
+		5F223272225C9C580000CE40 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223271225C9C580000CE40 /* MapPrice.m */; };
+		5F223276225C9CB20000CE40 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223275225C9CB20000CE40 /* TicketTableViewCell.m */; };
+		5F223279225C9D110000CE40 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223278225C9D110000CE40 /* MainViewController.m */; };
+		5F22327C225C9D5A0000CE40 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22327B225C9D5A0000CE40 /* PlaceViewController.m */; };
+		5F22327F225C9D8F0000CE40 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22327E225C9D8F0000CE40 /* TicketsViewController.m */; };
+		5F223282225C9DB50000CE40 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223281225C9DB50000CE40 /* MapViewController.m */; };
+		5F223285225C9DF20000CE40 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223284225C9DF20000CE40 /* TabBarController.m */; };
+		5F223288225C9E210000CE40 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223287225C9E210000CE40 /* ProgressView.m */; };
+		5F22328B225C9E4C0000CE40 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F22328A225C9E4C0000CE40 /* ContentViewController.m */; };
+		5F223291225C9F850000CE40 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F223290225C9F850000CE40 /* FirstViewController.m */; };
+		5F223295225CA0590000CE40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F223297225CA0590000CE40 /* Localizable.strings */; };
+		5F22329B225CA0A00000CE40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F22329D225CA0A00000CE40 /* InfoPlist.strings */; };
 		5F79EBD02152123B00EA18FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F79EBCF2152123B00EA18FD /* AppDelegate.m */; };
-		5F79EBD32152123B00EA18FD /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F79EBD22152123B00EA18FD /* MainVC.m */; };
 		5F79EBD82152123E00EA18FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F79EBD72152123E00EA18FD /* Assets.xcassets */; };
 		5F79EBDB2152123E00EA18FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F79EBD92152123E00EA18FD /* LaunchScreen.storyboard */; };
 		5F79EBDE2152123E00EA18FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F79EBDD2152123E00EA18FD /* main.m */; };
+		5F80B2CE225CB0210079E4C5 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F80B2CD225CB0210079E4C5 /* LocationService.m */; };
 		5F85868921521E9000940C4D /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85868821521E9000940C4D /* Airport.m */; };
 		5F85868C21521EE900940C4D /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85868B21521EE900940C4D /* Country.m */; };
 		5F85868F21521F0E00940C4D /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85868E21521F0E00940C4D /* City.m */; };
@@ -19,18 +36,59 @@
 		5F85869521521F8000940C4D /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F85869221521F8000940C4D /* airports.json */; };
 		5F85869621521F8000940C4D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F85869321521F8000940C4D /* countries.json */; };
 		5F85869A21521FD500940C4D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85869921521FD500940C4D /* DataManager.m */; };
+		5FB100B0225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB100AE225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.m */; };
+		5FB100B1225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB100AF225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.m */; };
+		5FF80E7C225CA769009C2FF0 /* AirCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FF80E7A225CA769009C2FF0 /* AirCoreData.xcdatamodeld */; };
+		71548734F0D44391C8C0892D /* libPods-AirTicketer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB6E0F741FE1CD396DFD67A /* libPods-AirTicketer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0497449490ADB1A2F0C5903E /* Pods-AirTicketer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirTicketer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirTicketer/Pods-AirTicketer.release.xcconfig"; sourceTree = "<group>"; };
+		3EB6E0F741FE1CD396DFD67A /* libPods-AirTicketer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirTicketer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F22325E225C9B0C0000CE40 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		5F22325F225C9B0C0000CE40 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		5F223264225C9B5F0000CE40 /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		5F223265225C9B5F0000CE40 /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		5F223267225C9B8B0000CE40 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		5F223268225C9B8B0000CE40 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		5F22326A225C9BC80000CE40 /* NSString+Localize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		5F22326B225C9BC80000CE40 /* NSString+Localize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		5F22326D225C9BF30000CE40 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		5F22326E225C9BF30000CE40 /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		5F223270225C9C580000CE40 /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		5F223271225C9C580000CE40 /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		5F223274225C9CB20000CE40 /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		5F223275225C9CB20000CE40 /* TicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		5F223277225C9D110000CE40 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5F223278225C9D110000CE40 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5F22327A225C9D5A0000CE40 /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		5F22327B225C9D5A0000CE40 /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		5F22327D225C9D8F0000CE40 /* TicketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		5F22327E225C9D8F0000CE40 /* TicketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		5F223280225C9DB50000CE40 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5F223281225C9DB50000CE40 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5F223283225C9DF20000CE40 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		5F223284225C9DF20000CE40 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		5F223286225C9E210000CE40 /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		5F223287225C9E210000CE40 /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		5F223289225C9E4C0000CE40 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		5F22328A225C9E4C0000CE40 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		5F22328F225C9F850000CE40 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5F223290225C9F850000CE40 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5F223294225CA0420000CE40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F223296225CA0590000CE40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F223298225CA0600000CE40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F22329C225CA0A00000CE40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F22329E225CA0A10000CE40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F79EBCB2152123A00EA18FD /* AirTicketer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirTicketer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F79EBCE2152123B00EA18FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F79EBCF2152123B00EA18FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5F79EBD12152123B00EA18FD /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
-		5F79EBD22152123B00EA18FD /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		5F79EBD72152123E00EA18FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F79EBDA2152123E00EA18FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F79EBDC2152123E00EA18FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F79EBDD2152123E00EA18FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F80B2CC225CB0210079E4C5 /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		5F80B2CD225CB0210079E4C5 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
 		5F85868721521E9000940C4D /* Airport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
 		5F85868821521E9000940C4D /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
 		5F85868A21521EE900940C4D /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
@@ -42,6 +100,12 @@
 		5F85869321521F8000940C4D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		5F85869821521FD500940C4D /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		5F85869921521FD500940C4D /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5FB100AC225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5FB100AD225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataClass.h"; sourceTree = "<group>"; };
+		5FB100AE225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataClass.m"; sourceTree = "<group>"; };
+		5FB100AF225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5FF80E7B225CA769009C2FF0 /* AirCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirCoreData.xcdatamodel; sourceTree = "<group>"; };
+		C537B97F6DA367FDBD2B1B6A /* Pods-AirTicketer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirTicketer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirTicketer/Pods-AirTicketer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +113,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71548734F0D44391C8C0892D /* libPods-AirTicketer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22417C033F288BF9E7852544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C537B97F6DA367FDBD2B1B6A /* Pods-AirTicketer.debug.xcconfig */,
+				0497449490ADB1A2F0C5903E /* Pods-AirTicketer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D2C15AE03CAE60A7FE1AED2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6E0F741FE1CD396DFD67A /* libPods-AirTicketer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F223273225C9C8F0000CE40 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5F223274225C9CB20000CE40 /* TicketTableViewCell.h */,
+				5F223275225C9CB20000CE40 /* TicketTableViewCell.m */,
+				5F223277225C9D110000CE40 /* MainViewController.h */,
+				5F223278225C9D110000CE40 /* MainViewController.m */,
+				5F22327A225C9D5A0000CE40 /* PlaceViewController.h */,
+				5F22327B225C9D5A0000CE40 /* PlaceViewController.m */,
+				5F22327D225C9D8F0000CE40 /* TicketsViewController.h */,
+				5F22327E225C9D8F0000CE40 /* TicketsViewController.m */,
+				5F223280225C9DB50000CE40 /* MapViewController.h */,
+				5F223281225C9DB50000CE40 /* MapViewController.m */,
+				5F223283225C9DF20000CE40 /* TabBarController.h */,
+				5F223284225C9DF20000CE40 /* TabBarController.m */,
+				5F223286225C9E210000CE40 /* ProgressView.h */,
+				5F223287225C9E210000CE40 /* ProgressView.m */,
+				5F223289225C9E4C0000CE40 /* ContentViewController.h */,
+				5F22328A225C9E4C0000CE40 /* ContentViewController.m */,
+				5F22328F225C9F850000CE40 /* FirstViewController.h */,
+				5F223290225C9F850000CE40 /* FirstViewController.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		5F79EBC22152123A00EA18FD = {
 			isa = PBXGroup;
 			children = (
 				5F79EBCD2152123A00EA18FD /* AirTicketer */,
 				5F79EBCC2152123A00EA18FD /* Products */,
+				22417C033F288BF9E7852544 /* Pods */,
+				5D2C15AE03CAE60A7FE1AED2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,35 +185,34 @@
 			children = (
 				5F79EBCE2152123B00EA18FD /* AppDelegate.h */,
 				5F79EBCF2152123B00EA18FD /* AppDelegate.m */,
-				5F85868121521DF800940C4D /* Controllers */,
-				5F79EBD92152123E00EA18FD /* LaunchScreen.storyboard */,
 				5F79EBDC2152123E00EA18FD /* Info.plist */,
+				5F79EBD92152123E00EA18FD /* LaunchScreen.storyboard */,
 				5F79EBDD2152123E00EA18FD /* main.m */,
 				5F85869721521FB800940C4D /* Helpers */,
 				5F85868221521E0000940C4D /* Model */,
+				5F223273225C9C8F0000CE40 /* Presentation */,
 				5F85869021521F6300940C4D /* Resources */,
 			);
 			path = AirTicketer;
 			sourceTree = "<group>";
 		};
-		5F85868121521DF800940C4D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				5F79EBD12152123B00EA18FD /* MainVC.h */,
-				5F79EBD22152123B00EA18FD /* MainVC.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		5F85868221521E0000940C4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5FB100AC225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.h */,
+				5FB100AD225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.h */,
+				5FB100AE225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.m */,
+				5FB100AF225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.m */,
 				5F85868721521E9000940C4D /* Airport.h */,
 				5F85868821521E9000940C4D /* Airport.m */,
 				5F85868A21521EE900940C4D /* Country.h */,
 				5F85868B21521EE900940C4D /* Country.m */,
 				5F85868D21521F0E00940C4D /* City.h */,
 				5F85868E21521F0E00940C4D /* City.m */,
+				5F22326D225C9BF30000CE40 /* Ticket.h */,
+				5F22326E225C9BF30000CE40 /* Ticket.m */,
+				5F223270225C9C580000CE40 /* MapPrice.h */,
+				5F223271225C9C580000CE40 /* MapPrice.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +224,9 @@
 				5F85869121521F8000940C4D /* cities.json */,
 				5F85869321521F8000940C4D /* countries.json */,
 				5F79EBD72152123E00EA18FD /* Assets.xcassets */,
+				5F223297225CA0590000CE40 /* Localizable.strings */,
+				5F22329D225CA0A00000CE40 /* InfoPlist.strings */,
+				5FF80E7A225CA769009C2FF0 /* AirCoreData.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -125,6 +236,16 @@
 			children = (
 				5F85869821521FD500940C4D /* DataManager.h */,
 				5F85869921521FD500940C4D /* DataManager.m */,
+				5F22325E225C9B0C0000CE40 /* APIManager.h */,
+				5F22325F225C9B0C0000CE40 /* APIManager.m */,
+				5F223264225C9B5F0000CE40 /* CoreDataHelper.h */,
+				5F223265225C9B5F0000CE40 /* CoreDataHelper.m */,
+				5F223267225C9B8B0000CE40 /* NotificationCenter.h */,
+				5F223268225C9B8B0000CE40 /* NotificationCenter.m */,
+				5F22326A225C9BC80000CE40 /* NSString+Localize.h */,
+				5F22326B225C9BC80000CE40 /* NSString+Localize.m */,
+				5F80B2CC225CB0210079E4C5 /* LocationService.h */,
+				5F80B2CD225CB0210079E4C5 /* LocationService.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -136,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F79EBE12152123E00EA18FD /* Build configuration list for PBXNativeTarget "AirTicketer" */;
 			buildPhases = (
+				10195BED1AAF04EF68E7828E /* [CP] Check Pods Manifest.lock */,
 				5F79EBC72152123A00EA18FD /* Sources */,
 				5F79EBC82152123A00EA18FD /* Frameworks */,
 				5F79EBC92152123A00EA18FD /* Resources */,
+				D3E51A270900766335BF0B5C /* [CP] Embed Pods Frameworks */,
+				9FBF916134E62DD5BFEA4F19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +294,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 5F79EBC22152123A00EA18FD;
 			productRefGroup = 5F79EBCC2152123A00EA18FD /* Products */;
@@ -187,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F85869421521F8000940C4D /* cities.json in Resources */,
+				5F22329B225CA0A00000CE40 /* InfoPlist.strings in Resources */,
+				5F223295225CA0590000CE40 /* Localizable.strings in Resources */,
 				5F85869521521F8000940C4D /* airports.json in Resources */,
 				5F79EBDB2152123E00EA18FD /* LaunchScreen.storyboard in Resources */,
 				5F85869621521F8000940C4D /* countries.json in Resources */,
@@ -196,17 +323,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10195BED1AAF04EF68E7828E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirTicketer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FBF916134E62DD5BFEA4F19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirTicketer/Pods-AirTicketer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E51A270900766335BF0B5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirTicketer/Pods-AirTicketer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F79EBC72152123A00EA18FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F79EBD32152123B00EA18FD /* MainVC.m in Sources */,
 				5F85868921521E9000940C4D /* Airport.m in Sources */,
 				5F85869A21521FD500940C4D /* DataManager.m in Sources */,
+				5F22327C225C9D5A0000CE40 /* PlaceViewController.m in Sources */,
+				5FF80E7C225CA769009C2FF0 /* AirCoreData.xcdatamodeld in Sources */,
+				5F223279225C9D110000CE40 /* MainViewController.m in Sources */,
+				5F223288225C9E210000CE40 /* ProgressView.m in Sources */,
 				5F85868F21521F0E00940C4D /* City.m in Sources */,
+				5F223260225C9B0C0000CE40 /* APIManager.m in Sources */,
+				5F223272225C9C580000CE40 /* MapPrice.m in Sources */,
+				5FB100B1225CB4FA00F944C5 /* FavoriteTicket+CoreDataProperties.m in Sources */,
+				5FB100B0225CB4FA00F944C5 /* FavoriteTicket+CoreDataClass.m in Sources */,
+				5F22326F225C9BF30000CE40 /* Ticket.m in Sources */,
 				5F79EBDE2152123E00EA18FD /* main.m in Sources */,
+				5F22328B225C9E4C0000CE40 /* ContentViewController.m in Sources */,
+				5F223276225C9CB20000CE40 /* TicketTableViewCell.m in Sources */,
 				5F79EBD02152123B00EA18FD /* AppDelegate.m in Sources */,
+				5F22326C225C9BC80000CE40 /* NSString+Localize.m in Sources */,
+				5F22327F225C9D8F0000CE40 /* TicketsViewController.m in Sources */,
+				5F223269225C9B8B0000CE40 /* NotificationCenter.m in Sources */,
+				5F223282225C9DB50000CE40 /* MapViewController.m in Sources */,
+				5F80B2CE225CB0210079E4C5 /* LocationService.m in Sources */,
+				5F223291225C9F850000CE40 /* FirstViewController.m in Sources */,
+				5F223285225C9DF20000CE40 /* TabBarController.m in Sources */,
+				5F223266225C9B5F0000CE40 /* CoreDataHelper.m in Sources */,
 				5F85868C21521EE900940C4D /* Country.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,10 +410,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5F223297225CA0590000CE40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F223296225CA0590000CE40 /* en */,
+				5F223298225CA0600000CE40 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5F22329D225CA0A00000CE40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F22329C225CA0A00000CE40 /* en */,
+				5F22329E225CA0A10000CE40 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		5F79EBD92152123E00EA18FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5F79EBDA2152123E00EA18FD /* Base */,
+				5F223294225CA0420000CE40 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -229,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -288,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -339,11 +556,13 @@
 		};
 		5F79EBE22152123E00EA18FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C537B97F6DA367FDBD2B1B6A /* Pods-AirTicketer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWZT8E272V;
 				INFOPLIST_FILE = AirTicketer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,11 +575,13 @@
 		};
 		5F79EBE32152123E00EA18FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0497449490ADB1A2F0C5903E /* Pods-AirTicketer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWZT8E272V;
 				INFOPLIST_FILE = AirTicketer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FF80E7A225CA769009C2FF0 /* AirCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FF80E7B225CA769009C2FF0 /* AirCoreData.xcdatamodel */,
+			);
+			currentVersion = 5FF80E7B225CA769009C2FF0 /* AirCoreData.xcdatamodel */;
+			path = AirCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F79EBC32152123A00EA18FD /* Project object */;
 }

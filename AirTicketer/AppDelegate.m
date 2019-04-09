@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "MainVC.h"
+#import "MainViewController.h"
+#import "MapViewController.h"
+#import "TabBarController.h"
+#import "NotificationCenter.h"
 
 @interface AppDelegate ()
 
@@ -18,19 +21,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    CGRect frame = [UIScreen mainScreen].bounds;
-    self.window = [[UIWindow alloc] initWithFrame: frame];
+    CGRect windowFrame = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame: windowFrame];
     
-    MainVC *mainViewController = [[MainVC alloc] init];
+    TabBarController *tabBarController = [[TabBarController alloc] init];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:100/255 green:228/255 blue:255 alpha:1.0]];
-    [[UINavigationBar appearance] setTranslucent:NO];
-    
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
-
+    [[NotificationCenter sharedInstance] registerService];
     
 
     return YES;

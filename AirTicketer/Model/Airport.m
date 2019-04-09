@@ -9,6 +9,7 @@
 #import "Airport.h"
 
 @implementation Airport
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
@@ -32,4 +33,5 @@
     
     return self;
 }
+
 @end

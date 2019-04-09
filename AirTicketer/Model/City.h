@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-
-
 @interface City : NSObject
 
 @property (nonatomic, strong) NSString *name;
